@@ -1,0 +1,19 @@
+{
+  "name": "quo-vaidis-evolution",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "build:wasm": "export PATH=\"/usr/bin:$PATH\"; wasm-pack build simulation-wasm --target web",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.3",
+    "vite": "^7.2.4",
+    "vite-plugin-top-level-await": "^1.6.0",
+    "vite-plugin-wasm": "^3.5.0",
+    "wasm-pack": "^0.13.1"
+  }
+}
